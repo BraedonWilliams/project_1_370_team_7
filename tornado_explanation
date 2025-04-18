@@ -1,0 +1,18 @@
+Tornado is a Python web framework and asynchronous networking library designed to handle high-performance, non-blocking web applications. It is particularly well-suited for applications that require long-lived network connections, such as WebSockets, real-time updates, or chat applications.
+
+Key Features of Tornado:
+Asynchronous I/O: Tornado uses a non-blocking I/O loop, making it highly efficient for handling thousands of simultaneous connections.
+Web Framework: It includes a simple web framework for building web applications, similar to Flask or Django but optimized for asynchronous operations.
+WebSocket Support: Tornado has built-in support for WebSockets, enabling real-time, bidirectional communication between clients and servers.
+Scalability: Tornado is designed to scale to handle large numbers of open connections, making it ideal for real-time web applications.
+Built-in HTTP Server: It comes with its own HTTP server, which is optimized for asynchronous operations and can be used without an external web server like Nginx or Apache.
+Example of a Simple Tornado Web Application:
+How It Works:
+The MainHandler class defines a request handler for the root URL (/).
+The make_app function creates a Tornado application and maps the URL to the handler.
+The application listens on port 8888, and the Tornado I/O loop starts to handle incoming requests asynchronously.
+Use Cases:
+Real-time web applications (e.g., chat apps, live dashboards).
+Long-polling or WebSocket-based applications.
+High-performance APIs.
+Tornado is lightweight and flexible, but it requires a good understanding of asynchronous programming in Python. It is often used in scenarios where performance and scalability are critical.
